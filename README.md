@@ -97,3 +97,5 @@ sudo ldconfig
 
 1. <https://www.opennet.ru/man.shtml?topic=ar&category=1> - **man ar**
 2. <https://www.opennet.ru/man.shtml?topic=gcc&category=1> - **man gcc**
+3. <https://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html> - **shared library**
+4. <https://renenyffenegger.ch/notes/development/languages/C-C-plus-plus/GCC/create-libraries/index> - **shared and static lib**
