@@ -9,10 +9,10 @@ bool isNegative(int* num) {
     return false;
 }
 
-int isNull(int num);
+int isNull(int); //prototype
 
 int main() {
-    int input, zero = 0, output = 0;
+    int input = 0, zero = 0, output = 0;
     bool negative = false;
 
     printf("Enter a number: ");
@@ -33,11 +33,11 @@ int main() {
 
         input = input / 10;
     }
-    if (negative == true)
-        output += -1; 
+    if (negative == true) // if (negative)
+        output *= -1; 
 
-    printf("Zero= %i\n", zero);
-    printf("Output dd= %i\n", output);
+    printf("Zero = %i\n", zero);
+    printf("Output = %d\n", output);
     return 0;
 }
 
