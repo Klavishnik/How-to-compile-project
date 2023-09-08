@@ -1,12 +1,6 @@
 #include <stdio.h> 
 #include <stdbool.h> 
 
-int isNull(int num) {
-    if (num == 0)
-        return 1;
-    return 0;
-}
-
 bool isNegative(int* num) {
     if (*num < 0) {
         *num *= -1;
@@ -14,6 +8,8 @@ bool isNegative(int* num) {
     }
     return false;
 }
+
+int isNull(int num);
 
 int main() {
     int input, zero = 0, output = 0;
@@ -44,3 +40,12 @@ int main() {
     printf("Output dd= %i\n", output);
     return 0;
 }
+
+
+int isNull(int num) {
+    if (num == 0)
+        return 1;
+    else
+        return 0;
+}
+
