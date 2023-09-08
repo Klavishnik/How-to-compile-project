@@ -16,7 +16,12 @@ int main() {
     bool negative = false;
 
     printf("Enter a number: ");
-    scanf("%d", &input);
+    // check input value
+    int ret = scanf("%d", &input);
+    if (ret != 1) {
+        printf("Error input \n");
+        return -1;
+    }
    
     zero = isNull(input);
     negative = isNegative(&input);
