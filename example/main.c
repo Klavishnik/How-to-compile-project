@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include <stdbool.h> 
 
-bool isNegative(int* num) {
+bool is_negative(int* num) {
     if (*num < 0) {
         *num *= -1;
         return true;
@@ -9,7 +9,7 @@ bool isNegative(int* num) {
     return false;
 }
 
-int isNull(int); //prototype
+int is_null(int); //prototype
 
 int main() {
     int input = 0, zero = 0, output = 0;
@@ -23,8 +23,8 @@ int main() {
         return -1;
     }
    
-    zero = isNull(input);
-    negative = isNegative(&input);
+    zero = is_null(input);
+    negative = is_negative(&input);
 
     int mult = 1;
     while (input > 0) {
@@ -47,7 +47,7 @@ int main() {
 }
 
 
-int isNull(int num) {
+int is_null(int num) {
     if (num == 0)
         return 1;
     else
